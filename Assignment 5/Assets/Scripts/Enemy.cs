@@ -11,12 +11,12 @@ public class Enemy : MonoBehaviour
     public float rotationDamping = 2f;
     public float moveSpeed = 5f;
 
-    private Animator anim;
+    private Animator animEnemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        animEnemy = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,7 +29,6 @@ public class Enemy : MonoBehaviour
         }
         if (playerDistance < 12f)
         {
-            //anim.SetInteger("condition", 1);
             if (playerDistance > 2f)
             {
                 chase();
@@ -38,11 +37,14 @@ public class Enemy : MonoBehaviour
             else if (playerDistance < 2f)
             {
                 attack();
-                anim.SetInteger("condition", 1);
 
+                if (Input.GetKeyUp(KeyCode.Space))
+                {
+                   animEnemy.SetInteger("condition", 3);
+                    Destroy(gameObject);
+                }
             }
         }
-        //anim.SetInteger("condition", 0);
     }
 
     void lookAtPlayer()
@@ -54,21 +56,17 @@ public class Enemy : MonoBehaviour
 
     void chase()
     {
-        anim.SetInteger("condition", 1);
+        animEnemy.SetInteger("condition", 1);
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 
     void attack()
     {
-        anim.SetInteger("condition", 2);
-        /*
-        RaycastHit hit;
-        if(Physics.Raycast ( transform.position, transform.forward, out hit ))
-        {
-            if(hit.collider.gameObject.tag == "Player")
-            {
-               // anim.SetInteger("condition", 2);
-            }
-        }*/
+        animEnemy.SetInteger("condition", 2);
     }
+
 }
+
+/* Sources:
+ * https://www.youtube.com/watch?v=188SMf9f6UY
+*/

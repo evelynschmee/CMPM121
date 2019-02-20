@@ -15,8 +15,6 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("helllo?");
-        Debug.Log("Key:" + haveKey);
         if ( (other.tag == "Player") && (haveKey == true) )
         {
             door.transform.position += new Vector3(0, 6, 0);

@@ -23,13 +23,10 @@ public class ControllerScript : MonoBehaviour
     public Text scoreText;
     public Text controlText;
     public Text winText;
+    public Text helpText;
 
     public ParticleSystem part;
-    private Animator anim;
-
-    public float knockBackForce;
-    public float knockbackTime;
-    private float knockBackCounter;
+    public static Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -41,8 +38,10 @@ public class ControllerScript : MonoBehaviour
         //score = 0;
         scoreText.text = "Score: " + score.ToString();
 
-        controlText.text = "Arrowkeys to Move \n Spacebar to Jump \n C to Switch Camera \n Move Mouse to Look Around";
+        controlText.text = "WASD to Move \nSpacebar to Use \n Your Power!";
         winText.text = "";
+        helpText.text = "Get the 'Key' \nTo Open The Door"; 
+
     }
 
     // Update is called once per frame
@@ -63,26 +62,22 @@ public class ControllerScript : MonoBehaviour
                 anim.SetInteger("condition", 0);
                 movement = new Vector3(0, 0, 0);
             }
-
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                anim.SetInteger("condition", 0);
-                
-            }
             /*
-            h = Input.GetAxis("Horizontal");
-            v = Input.GetAxis("Vertical");
+            if (Input.GetKey(KeyCode.Space))
+            {
 
-                       
+                anim.SetInteger("condition", 2);
+                movement = new Vector3(0, 0, 0);
+                Debug.Log("space was pressed");
 
-            movement = new Vector3(h, 0, v);
+            }*/
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.SetInteger("condition", 2);
+                movement = new Vector3(0, 0, 0);
+            }
+
         }
-        else
-        {
-            movement += new Vector3(0, -gravity, 0);
-            */
-        }
-        //controller.Move(movement * speed * Time.deltaTime);
 
         rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
         transform.eulerAngles = new Vector3(0, rot, 0);
@@ -106,18 +101,15 @@ public class ControllerScript : MonoBehaviour
     {
         scoreText.text = "Score: " + score.ToString();
 
-        if (score >= 8)
+        if (score >= 3)
         {
-            winText.text = "You Win!";
+            winText.text = "All the Cubes!";
         }
     }
 
-    private void Knockback()
-    {
-        knockBackCounter = knockbackTime;
-
-    }
 }
 
 /*Sources:
- * this tutorial that pretty much was the assignment https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text?playlist=17141*/
+ * this tutorial that pretty much was the assignment https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text?playlist=17141
+ * animating help: https://www.youtube.com/watch?v=ReauId6jFFI&t=1234s
+ */    

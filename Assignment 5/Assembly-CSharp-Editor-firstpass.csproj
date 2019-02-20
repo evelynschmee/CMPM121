@@ -312,6 +312,18 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="sfw.net">
+      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Unity.45">
+      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Api.45">
+      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
@@ -332,18 +344,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Api.45">
-      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Unity.45">
-      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
-    </Reference>
-    <Reference Include="sfw.net">
-      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
-    </Reference>
-    <Reference Include="GitHub.Logging">
-      <HintPath>/Users/evelyn/Desktop/Unity/Assignment 5/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
