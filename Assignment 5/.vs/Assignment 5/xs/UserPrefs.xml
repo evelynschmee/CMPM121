@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{3E559C3B-8D28-45A4-E621-C3D51565CFAE}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControllerScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/ControllerScript.cs" Line="115" Column="8" />
+      <File FileName="Assets/Scripts/ControllerScript.cs" Line="75" Column="14" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="42" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -28,6 +28,7 @@ public class ControllerScript : MonoBehaviour
     public ParticleSystem part;
     public static Animator anim;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +48,7 @@ public class ControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (controller.isGrounded)
         {
             if( Input.GetKey(KeyCode.W))
@@ -62,19 +64,12 @@ public class ControllerScript : MonoBehaviour
                 anim.SetInteger("condition", 0);
                 movement = new Vector3(0, 0, 0);
             }
-            /*
+
             if (Input.GetKey(KeyCode.Space))
             {
-
                 anim.SetInteger("condition", 2);
                 movement = new Vector3(0, 0, 0);
-                Debug.Log("space was pressed");
-
-            }*/
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.SetInteger("condition", 2);
-                movement = new Vector3(0, 0, 0);
+                Debug.Log("key was pressed");
             }
 
         }
@@ -95,6 +90,7 @@ public class ControllerScript : MonoBehaviour
             score += 1;
             SetScoreText();
         }
+
     }
 
     private void SetScoreText()
@@ -106,6 +102,7 @@ public class ControllerScript : MonoBehaviour
             winText.text = "All the Cubes!";
         }
     }
+
 
 }
 

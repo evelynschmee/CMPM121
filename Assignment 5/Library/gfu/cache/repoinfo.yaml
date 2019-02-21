@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-02-19T23:55:11.275-08:00
-  initializedAtString: 2019-02-19T23:55:11.275-08:00
+  lastUpdatedAtString: 2019-02-20T23:27:41.574-08:00
+  initializedAtString: 2019-02-20T23:27:41.574-08:00
   currentGitRemote:
     name: origin
-    url: https://github.com/evelynschmee/evelynrepo.git
+    url: https://github.com/evelynschmee/CMPM121.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: broken
-    tracking: origin/broken
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: broken
+    name: master
     remote:
       name: origin
-      url: https://github.com/evelynschmee/evelynrepo.git
-    trackingBranch: broken
+      url: https://github.com/evelynschmee/CMPM121.git
+    trackingBranch: master
   currentConfigRemote:
     name: origin
-    url: https://github.com/evelynschmee/evelynrepo.git
+    url: https://github.com/evelynschmee/CMPM121.git
   currentHead: 

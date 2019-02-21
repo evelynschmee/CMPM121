@@ -10,8 +10,11 @@ public class Enemy : MonoBehaviour
     public float playerDistance;
     public float rotationDamping = 2f;
     public float moveSpeed = 5f;
+    public GameObject user;
 
     private Animator animEnemy;
+
+    Vector3 moveDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -23,28 +26,35 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         playerDistance = Vector3.Distance(player.position, transform.position);
-        if (playerDistance < 15f)
-        {
-            lookAtPlayer();
-        }
-        if (playerDistance < 12f)
-        {
-            if (playerDistance > 2f)
+        moveDirection = (transform.position - player.transform.position).normalized;
+ 
+            if (playerDistance < 12f)
             {
-                chase();
-
+                lookAtPlayer();
             }
-            else if (playerDistance < 2f)
+            if (playerDistance < 8f)
             {
-                attack();
-
-                if (Input.GetKeyUp(KeyCode.Space))
+                if (playerDistance > 2f)
                 {
-                   animEnemy.SetInteger("condition", 3);
-                    Destroy(gameObject);
+                    chase();
+
+                }
+                else if (playerDistance < 2f)
+                {
+                    attack();
+
+
+                    if (Input.GetKeyUp(KeyCode.Space) && user.gameObject.tag == "Player")
+                    {
+                        transform.position += Vector3.back * 400.0f * Time.deltaTime;
+
+                        animEnemy.SetInteger("condition", 3);
+
+                    }
                 }
             }
-        }
+
+
     }
 
     void lookAtPlayer()
