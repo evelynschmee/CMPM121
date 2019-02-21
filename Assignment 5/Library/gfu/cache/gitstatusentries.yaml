@@ -13,6 +13,204 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
-  entries: []
+  lastUpdatedAtString: 2019-02-20T23:31:25.557-08:00
+  initializedAtString: 2019-02-20T23:30:43.504-08:00
+  entries:
+  - path: Assignment 5/Library/assetDatabase3
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/assetDatabase3
+    projectPath: Library/assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/EditorInstance.json
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/EditorInstance.json
+    projectPath: Library/EditorInstance.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Library/EditorUserBuildSettings.asset
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/EditorUserBuildSettings.asset
+    projectPath: Library/EditorUserBuildSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/gfu/cache/gitlocks.yaml
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/gfu/cache/gitlocks.yaml
+    projectPath: Library/gfu/cache/gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/gfu/cache/gitstatusentries.yaml
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/gfu/cache/gitstatusentries.yaml
+    projectPath: Library/gfu/cache/gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/gfu/cache/gittrackingstatus.yaml
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/gfu/cache/gittrackingstatus.yaml
+    projectPath: Library/gfu/cache/gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/gfu/cache/repoinfo.yaml
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/gfu/cache/repoinfo.yaml
+    projectPath: Library/gfu/cache/repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/LastBuild.buildreport
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/LastBuild.buildreport
+    projectPath: Library/LastBuild.buildreport
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Assembly-CSharp.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Assembly-CSharp.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Assembly-CSharp.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Assembly-CSharp.pdb
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    projectPath: Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.pdb
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/ProjectSettings/GraphicsSettings.asset
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/ProjectSettings/GraphicsSettings.asset
+    projectPath: ProjectSettings/GraphicsSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assignment 5/Temp/__Backupscenes/0.backup
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/__Backupscenes/0.backup
+    projectPath: Temp/__Backupscenes/0.backup
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/ProcessJobs/1f068db059d5cf0261a3b566803bc6c6.bakert
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/ProcessJobs/1f068db059d5cf0261a3b566803bc6c6.bakert
+    projectPath: Temp/ProcessJobs/1f068db059d5cf0261a3b566803bc6c6.bakert
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityLockfile
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityLockfile
+    projectPath: Temp/UnityLockfile
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-1a64a8a2b7bea4ea38dafa0d3a0bcff3
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-1a64a8a2b7bea4ea38dafa0d3a0bcff3
+    projectPath: Temp/UnityTempFile-1a64a8a2b7bea4ea38dafa0d3a0bcff3
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-69e7d34b0b1534940bd1eb22f7f114ee
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-69e7d34b0b1534940bd1eb22f7f114ee
+    projectPath: Temp/UnityTempFile-69e7d34b0b1534940bd1eb22f7f114ee
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-9afbb799c257749319d9eab6c2277d1e
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-9afbb799c257749319d9eab6c2277d1e
+    projectPath: Temp/UnityTempFile-9afbb799c257749319d9eab6c2277d1e
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-a11a767a6a91c4bb9bcb00620c47072e
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-a11a767a6a91c4bb9bcb00620c47072e
+    projectPath: Temp/UnityTempFile-a11a767a6a91c4bb9bcb00620c47072e
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-dd0404724c6704a28a00335528b3ba10
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-dd0404724c6704a28a00335528b3ba10
+    projectPath: Temp/UnityTempFile-dd0404724c6704a28a00335528b3ba10
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assignment 5/Temp/UnityTempFile-f6e6d0acf8af84ca8abd22aebcc4e2fb
+    fullPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5/Temp/UnityTempFile-f6e6d0acf8af84ca8abd22aebcc4e2fb
+    projectPath: Temp/UnityTempFile-f6e6d0acf8af84ca8abd22aebcc4e2fb
+    originalPath: 
+    status: 1
+    staged: 0
