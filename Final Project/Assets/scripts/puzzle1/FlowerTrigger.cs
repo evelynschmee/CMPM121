@@ -7,13 +7,6 @@ public class FlowerTrigger : MonoBehaviour
     Color newColor;
     bool onTrigger = false;
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("base: " + FlowerScript.fBaseColor);
-        }
-    }
     void OnTriggerEnter(Collider other)
     {
         // player contacts the trigger

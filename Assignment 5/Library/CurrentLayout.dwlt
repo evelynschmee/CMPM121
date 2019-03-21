@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 448}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -71,7 +71,7 @@ MonoBehaviour:
     y: 30
     width: 1239
     height: 751
-  m_MinSize: {x: 583, y: 498}
+  m_MinSize: {x: 483, y: 398}
   m_MaxSize: {x: 12008, y: 14048}
   vertical: 1
   controlID: 89
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1239
     height: 801
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 448}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -217,7 +217,7 @@ MonoBehaviour:
     y: 0
     width: 1239
     height: 477
-  m_MinSize: {x: 583, y: 224}
+  m_MinSize: {x: 483, y: 124}
   m_MaxSize: {x: 12008, y: 4024}
   vertical: 0
   controlID: 90
@@ -240,16 +240,16 @@ MonoBehaviour:
     y: 0
     width: 790
     height: 477
-  m_MinSize: {x: 204, y: 224}
+  m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 12}
   - {fileID: 11}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,14 +325,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.7856285
+    - e00: 0.56020486
       e01: 0
       e02: 0
-      e03: -213.67636
+      e03: 14.287537
       e10: 0
-      e11: 0.7856285
+      e11: 0.56020486
       e12: 0
-      e13: 104.72563
+      e13: 99.58739
       e20: 0
       e21: 0
       e22: 1
@@ -455,20 +455,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Supercyan Character Pack Free Sample/Animations
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Supercyan Character Pack Free Sample/Animations
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/evelyn/Desktop/Projects/CMPM121/Assignment 5
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 1e0a0000
-    m_LastClickedID: 2590
-    m_ExpandedIDs: 000000001e0a0000540a0000a80c0000400d00006a0d000000ca9a3b
+    m_SelectedIDs: 3c0a0000
+    m_LastClickedID: 2620
+    m_ExpandedIDs: 00000000320a0000680a0000bc0c0000540d00007e0d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,7 +496,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e0a0000540a0000a80c0000400d00006a0d0000
+    m_ExpandedIDs: 00000000320a0000680a0000bc0c0000540d00007e0d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -523,8 +523,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 00000000863d0000c67c0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 00000000863d0000c67c00001a0d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,9 +646,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 1a0d0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6cf9ffff88f9ffffd2faffffcefbffff
+      m_ExpandedIDs: a8fbffff500e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -737,9 +737,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.19738488, y: -0.7875198, z: 0.31711602, w: -0.4901931}
   m_Size:
-    m_Target: 57.832115
+    m_Target: 31.138403
     speed: 2
-    m_Value: 57.832115
+    m_Value: 31.138403
   m_Ortho:
     m_Target: 0
     speed: 2

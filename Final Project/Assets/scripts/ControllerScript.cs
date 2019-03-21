@@ -9,9 +9,10 @@ public class ControllerScript : MonoBehaviour
     // Player stuff
     CharacterController controller;
     Vector3 movement;
+    Animator anim;
 
     [SerializeField]
-    float speed = 6.0f;
+    float speed = 30.0f;
     [SerializeField]
     float gravity = 2.0f;
     float jumpStrength = 50;
@@ -20,32 +21,12 @@ public class ControllerScript : MonoBehaviour
     // collectible stuff
     public int score = 0;
 
-    /*
-    public Text scoreText;
-    public Text controlText;
-    public Text winText;
-    public Text helpText;
-    */   
-
-        /*
-    public ParticleSystem part;
-    public static Animator anim;
-    */   
 
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        //anim = GetComponent<Animator>();
-        //part = GetComponent<ParticleSystem>();
-
-        //score = 0;
-        //scoreText.text = "Score: " + score.ToString();
-
-        //controlText.text = "WASD to Move \nSpacebar to Use \n Your Power!";
-       // winText.text = "";
-        //helpText.text = "Get the 'Key' \nTo Open The Door"; 
 
     }
 
@@ -74,32 +55,7 @@ public class ControllerScript : MonoBehaviour
             //movement.y -= gravity * Time.deltaTime;
         controller.Move(movement.normalized*speed * Time.deltaTime);
 
-    }
-    /*
-    void OnControllerColliderHit(ControllerColliderHit other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            PuzzleLily.changeColor(PuzzleLily.black, PuzzleLily.pink);
-        }
-    }
-    */
-    /*
 
-private void SetScoreText()
-{
-    scoreText.text = "Score: " + score.ToString();
-
-    if (score >= 3)
-    {
-        winText.text = "All the Cubes!";
     }
-}
-*/
 
 }
-
-/*Sources:
- * this tutorial that pretty much was the assignment https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial/displaying-score-and-text?playlist=17141
- * animating help: https://www.youtube.com/watch?v=ReauId6jFFI&t=1234s
- */    

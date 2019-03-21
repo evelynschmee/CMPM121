@@ -7,6 +7,7 @@ public class GreenTrigger : MonoBehaviour
     Color newColor;
     bool onTrigger = false;
 
+
     void Update()
     {
         if (onTrigger == true)
@@ -14,9 +15,11 @@ public class GreenTrigger : MonoBehaviour
             // is circle contacting trigger; player presses E, and they have paint
             if (Input.GetKey(KeyCode.E) && Palette.paintCount >= 1)
             {
+
                 // checks if the player is trying to apply RED
                 if (AreaDetection.circleColor == 0)
                 {
+                 
                     // if the flower is yellow
                     if (GreenFlower.gBaseColor == ColorScript.yellow)
                     {

@@ -7,20 +7,30 @@ public class LilyTrigger : MonoBehaviour
     Color newColor;
     bool onTrigger = false;
 
+    private void Start()
+    {
+        LilyScript.lBaseColor = ColorScript.black;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         // player contacts the trigger
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
+            Debug.Log("hi");
             // set ontrigger to true since the player is touching the plate
             onTrigger = true;
 
             // if the player is contacting with the trigger; set the trigger to true
             if (onTrigger != false)
             {
+                Debug.Log("hey");
+                Debug.Log("lbasecolor" + LilyScript.lBaseColor);
                 // if its black change it to red
                 if (LilyScript.lBaseColor == ColorScript.black)
                 {
+                    Debug.Log("uhhh");
+
                     newColor = ColorScript.red;
                     LilyScript.lBaseColor = newColor;
                 }

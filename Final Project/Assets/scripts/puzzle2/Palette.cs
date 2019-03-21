@@ -1,19 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Palette : MonoBehaviour
 {
     // counts how many times player uses space
     public static int paintCount;
     public Renderer palette;
+    public static bool showPaint;
+    public Text paintText;
+    public Text help2Text;
+
 
     // Update is called once per frame
     void Update()
     {
+        if( showPaint == true)
+        {
+            paintText.text = "Paint: " + paintCount.ToString() + "/3";
+            help2Text.text = "Step on the Palette Square to refill your paint";
+        }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("paintCount: " + paintCount);
+            Debug.Log(LBFlower.lbBaseColor);
+            Debug.Log(OrangeFlower.oBaseColor);
+            Debug.Log(PurpleFlower.purpBaseColor);
+            Debug.Log(PinkFlower.pinkBaseColor);
+            Debug.Log(GreenFlower.gBaseColor);
+            Debug.Log(Puzzle2.puzz2Solved);
+
+        }
+        if (LBFlower.lbBaseColor == ColorScript.lightBlue &&
+OrangeFlower.oBaseColor == ColorScript.orange &&
+PurpleFlower.purpBaseColor == ColorScript.purple &&
+PinkFlower.pinkBaseColor == ColorScript.pink &&
+GreenFlower.gBaseColor == ColorScript.nGreen)
+        {
+            Puzzle2.puzz2Solved = true;
         }
 
         // the player is still trying to solve the puzzle
@@ -25,8 +49,6 @@ public class Palette : MonoBehaviour
                 palette.material.color = ColorScript.red;
                 // the circle is not on the player
                 AreaDetection.startCircle = false;
-                // change the flowers back to darkGray
-                alldarkGray();
             } 
             // the player is actively using their 3 paint tries
             else
@@ -52,7 +74,7 @@ public class Palette : MonoBehaviour
     }
 
     // changes all flowers to darkGray when no paint is left ( player fails 3 tries)
-    static void alldarkGray()
+    public static void alldarkGray()
     {
         LBFlower.lbBaseColor = ColorScript.darkGray;
         OrangeFlower.oBaseColor = ColorScript.darkGray;

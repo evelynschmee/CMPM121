@@ -23,6 +23,10 @@ public class PaletteTrigger : MonoBehaviour
                 AreaDetection.startCircle = true;
                 // change the circle to red
                 AreaDetection.circleColor = 0;
+                // display UI
+                Palette.showPaint = true;
+                // change the flowers back to darkGray
+                Palette.alldarkGray();
             }
         }
         // player has full paint change all the flowers to their base colors
