@@ -4,36 +4,34 @@ using UnityEngine;
 
 public class Palette : MonoBehaviour
 {
-    // refilling out of 3
-    public static int paintRefill;
     // counts how many times player uses space
     public static int paintCount;
-    // is it y or b
-    public static int circleColor;
     public Renderer palette;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("paintCount: " + paintCount);
+        }
+
         // the player is still trying to solve the puzzle
         if (Puzzle2.puzz2Solved == false) {
 
-            //  refill the paint / player failed paint it red to indicate it refilled
-            if (paintRefill == 0 || paintRefill == 3 )
+            // change color to red 'refilled' if the player has no paint
+            if (paintCount <= 0)
             {
                 palette.material.color = ColorScript.red;
+                // the circle is not on the player
+                AreaDetection.startCircle = false;
+                // change the flowers back to darkGray
+                alldarkGray();
             } 
             // the player is actively using their 3 paint tries
-            else if( paintRefill != 0 || paintRefill != 3)
+            else
             {
-                palette.material.color = Color.white;
+                palette.material.color = ColorScript.white;
             }
         }
         // the player solved the puzzle, keep it white
@@ -41,18 +39,25 @@ public class Palette : MonoBehaviour
         {
             palette.material.color = Color.white;
         }
-        // press space to use paint : lose a paint
-        if (Input.GetKeyDown(KeyCode.Space)){
+        // press E to use paint : lose a paint
+        if (Input.GetKeyDown(KeyCode.E)){
             paintCount -= 1;
+            // if the player used it twice the circle is now blue
+            if ( paintCount == 1 )
+            {
+                AreaDetection.circleColor = 1;
+            }
         }
+
     }
 
-    // changes all flowers to white when no paint is left ( player fails 3 tries)
-    static void allGray()
+    // changes all flowers to darkGray when no paint is left ( player fails 3 tries)
+    static void alldarkGray()
     {
-        Flower1.f1BaseColor = Color.gray;
-        Flower2.f2BaseColor = Color.gray;
-        Flower3.f3BaseColor = Color.gray;
-        Flower4.f4BaseColor = Color.gray;
+        LBFlower.lbBaseColor = ColorScript.darkGray;
+        OrangeFlower.oBaseColor = ColorScript.darkGray;
+        PurpleFlower.purpBaseColor = ColorScript.darkGray;
+        PinkFlower.pinkBaseColor = ColorScript.darkGray;
+        GreenFlower.gBaseColor = ColorScript.darkGray;
     }
 }

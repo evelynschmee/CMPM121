@@ -5,8 +5,10 @@ using UnityEngine;
 public class AreaDetection : MonoBehaviour
 {
     public GameObject player;
-    private Vector3 tempCoor;
+    private Vector3 tempCoor, under;
     public Renderer circle;
+    // is it y or b
+    public static int circleColor;
 
     public static bool startCircle;
     float xCoor, yCoor, zCoor;
@@ -30,9 +32,16 @@ public class AreaDetection : MonoBehaviour
             transform.position = tempCoor;
             gameObject.SetActive(true);
         }
+        // if startcircle is false make the circle deactivate it
+        else
+        {
+            //gameObject.SetActive(false);
+            under = new Vector3(player.transform.position.x,-100, player.transform.position.z);
+            transform.position = under;
+        }
 
         // checks if it is red, otherwise its now blue
-        if( Palette.circleColor == 0)
+        if ( circleColor == 0)
         {
             circle.material.color = Color.red;
         }

@@ -11,7 +11,7 @@ public class Camera2Script : MonoBehaviour
     {
         // make the camera follow the players Z axis
         var cam  = target.transform.position.z;
-        transform.position = new Vector3(290, 3, cam);
+        transform.position = new Vector3(290, 22, cam);
     }
 
 }

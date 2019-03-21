@@ -4,34 +4,23 @@ using UnityEngine;
 
 public class LilyScript : MonoBehaviour
 {
-    public static Color lBaseColor; //= Color.black;
-    public static Color lEndColor; //= Color.green;
-    [SerializeField]
-    public static float duration = 3f;
-
-    public static Renderer lily;
+    public static Color lBaseColor;
+    public static Color lEndColor;
     public Material matofobject;
 
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        // start this object off as black
-        lily = GetComponent<Renderer>();
-    
+        // give the starter color and assign it to the basecolor
         lBaseColor = ColorScript.black;
-        //lily.material.color = lBaseColor;
-        lily.material.SetColor("temp", lBaseColor);
-        */
-        matofobject.color = ColorScript.black;
         matofobject.color = lBaseColor;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // will always update the new base color
+        matofobject.color = lBaseColor;
     }
 }
     

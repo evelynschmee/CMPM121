@@ -18,17 +18,19 @@ public class CameraController : MonoBehaviour
         // disable the other cameras
         camera2.SetActive(false);
         camera3.SetActive(false);
-        //cameraCS.SetActive(false);
 
         // main camera mode
         CameraMode = 1;
-        //changeCamera();
     }
 
     // Update is called once per frame
     void Update()
     {
         changeCamera();
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            CameraMode = 3;
+        }
     }
 
     void changeCamera()
@@ -54,13 +56,7 @@ public class CameraController : MonoBehaviour
             camera1.SetActive(false);
             camera2.SetActive(false);
             camera3.SetActive(true);
-        }
-        /*// cutscene cam
-        if(CameraMode == 4)
-        {
-
-        }
-        */       
+        }  
     }
 
 }

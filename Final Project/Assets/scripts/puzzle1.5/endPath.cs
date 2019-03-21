@@ -16,9 +16,6 @@ public class endPath : MonoBehaviour
 
             // trigger the door to close so the player cant go back into level 1
             door2.transform.position += new Vector3(0, -10, 0);
-
-            // let circle follow the player now
-            AreaDetection.startCircle = true;
         }
     }
 }

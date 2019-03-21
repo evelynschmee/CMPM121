@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class FlowerScript : MonoBehaviour
 {
-    public static Color fBaseColor; //= Color.black;
-    public static Color fEndColor; //= Color.green;
-    [SerializeField]
-    public static float duration = 3f;
+    public static Color fBaseColor;
+    public static Color fEndColor;
     public Material fMaterial;
-
-    //public static Renderer flower;
 
     // Start is called before the first frame update
     void Start()
     {
-        // start this object off as black
-        //flower = GetComponent<Renderer>();
-    
+        // give the starter color and assign it to the basecolor
         fBaseColor = ColorScript.darkGray;
         fMaterial.color = fBaseColor;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // will always update the new base color
+        fMaterial.color = fBaseColor;
     }
 }
     

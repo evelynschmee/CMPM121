@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlowerTrigger : MonoBehaviour
 {
-    Color color1, color2, newColor;
+    Color newColor;
     bool onTrigger = false;
 
     void Update()
@@ -16,11 +16,9 @@ public class FlowerTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hello");
         // player contacts the trigger
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("trig: " + onTrigger);
             // set ontrigger to true since the player is touching the plate
             onTrigger = true;
 
@@ -30,73 +28,51 @@ public class FlowerTrigger : MonoBehaviour
                 // if its darkgray change it to yellow
                 if (FlowerScript.fBaseColor == ColorScript.darkGray)
                 {
-                    //color1 = ColorScript.black;
                     newColor = ColorScript.yellow;
-
-                    //ColorScript.changeColor(FlowerScript.flower, newColor);
                     FlowerScript.fBaseColor = newColor;
-
-                    // play animation
-
                 }
                 // if its yellow change it to blue
                 else if (FlowerScript.fBaseColor == ColorScript.yellow)
                 {
-                    //color1 = ColorScript.red;
-                    color2 = ColorScript.blue;
-
-                    //ColorScript.changeColor(FlowerScript.flower, color2);
-                    FlowerScript.fBaseColor = color2;
+                    newColor = ColorScript.blue;
+                    FlowerScript.fBaseColor = newColor;
 
                     // change the turtle to yellow
-                    //ColorScript.changeColor(TurtleScript.turtle, ColorScript.yellow);
                     TurtleScript.tBaseColor = ColorScript.yellow;
-
                 }
 
                 // if its blue change it to red
                 else if (FlowerScript.fBaseColor == ColorScript.blue)
                 {
-                    //color1 = ColorScript.green;
-
-                    //ColorScript.changeColor(FlowerScript.flower, ColorScript.red);
-                    FlowerScript.fBaseColor = ColorScript.red;
+                    newColor = ColorScript.red;
+                    FlowerScript.fBaseColor = newColor;
 
                     // change the turtle to blue
-                    //ColorScript.changeColor(TurtleScript.turtle, ColorScript.blue);
                     TurtleScript.tBaseColor = ColorScript.blue;
-
                 }
 
                 // if its red change it to green
                 else if (FlowerScript.fBaseColor == ColorScript.red)
                 {
-                    //color1 = ColorScript.blue;
-                    color2 = ColorScript.green;
-                    //ColorScript.changeColor(FlowerScript.flower, ColorScript.green);
-                    FlowerScript.fBaseColor = color2;
+                    newColor = ColorScript.green;
+                    FlowerScript.fBaseColor = newColor;
       
                     // change the turtle to red
-                    //ColorScript.changeColor(TurtleScript.turtle, ColorScript.red);
                     TurtleScript.tBaseColor = ColorScript.red;
                 }
 
                 // if its green change it to yellow
                 else if (FlowerScript.fBaseColor == ColorScript.green)
                 {
-                    //color1 = ColorScript.blue;
-                    color2 = ColorScript.yellow;
-                    //ColorScript.changeColor(FlowerScript.flower, ColorScript.yellow);
-                    FlowerScript.fBaseColor = color2;
+                    newColor = ColorScript.yellow;
+                    FlowerScript.fBaseColor = newColor;
 
                     // change the turtle to red
-                   // ColorScript.changeColor(TurtleScript.turtle, ColorScript.red);
                     TurtleScript.tBaseColor = ColorScript.red;
                 }
                 onTrigger = false;
             }
         }
-
     }
 
 

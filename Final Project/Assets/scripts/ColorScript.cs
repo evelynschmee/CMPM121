@@ -6,9 +6,7 @@ public class ColorScript : MonoBehaviour
 {
     //public static Color baseColor; //= Color.black;
     public static Color black, gray, darkGray, red, green, yellow, blue, newColor;
-    public static Color purple, orange;
-    [SerializeField]
-    public static float duration = 3f;
+    public static Color white, purple, orange, pink, nGreen, lightBlue ;
 
     // Start is called before the first frame update
     void Start()
@@ -21,23 +19,12 @@ public class ColorScript : MonoBehaviour
         yellow = new Color(1f, 0.92f, 0.016f, 1f);
         blue = new Color(0, 0, 1, 1);
 
-        purple = new Color(1, 0, 1, 0.7f);
-        orange = new Color(1.0f, 0.64f, 0.0f);
-    }
-
-
-    public static void changeColor(Renderer thing, Color color)
-    {
-        //float lerp = Mathf.PingPong(Time.time, duration) / duration;
-        /// endColor = Color.Lerp(color1, color2, lerp);
-        newColor = color;
-        thing.material.color = newColor;
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
+        white = new Color(1, 1, 1, 1);
+        purple = new Color(.28f, .12f, .69f, 1f);
+        orange = new Color(1.0f, 0.56f, 0.0f, 1f);
+        pink = new Color(1, .33f, .95f, 1f);
+        nGreen = new Color(0.33f, 1f, 0f, 1f); ;
+        lightBlue = new Color(.59f, .86f, 1f, .99f);
 
     }
 }

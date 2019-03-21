@@ -60,12 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\models\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\scripts\camera stuff\Camera1Script.cs" />
     <Compile Include="Assets\scripts\camera stuff\Camera2Script.cs" />
     <Compile Include="Assets\scripts\camera stuff\CameraController.cs" />
-    <Compile Include="Assets\scripts\Color_Changer.cs" />
     <Compile Include="Assets\scripts\ColorScript.cs" />
     <Compile Include="Assets\scripts\ControllerScript.cs" />
+    <Compile Include="Assets\scripts\Example.cs" />
     <Compile Include="Assets\scripts\puzzle1.5\endPath.cs" />
     <Compile Include="Assets\scripts\puzzle1.5\SolvePuzzle1.cs" />
     <Compile Include="Assets\scripts\puzzle1\FlowerScript.cs" />
@@ -75,18 +76,22 @@
     <Compile Include="Assets\scripts\puzzle1\TurtleScript.cs" />
     <Compile Include="Assets\scripts\puzzle1\TurtleTrigger.cs" />
     <Compile Include="Assets\scripts\puzzle2\AreaDetection.cs" />
-    <Compile Include="Assets\scripts\puzzle2\Flower2.cs" />
-    <Compile Include="Assets\scripts\puzzle2\Flower3.cs" />
-    <Compile Include="Assets\scripts\puzzle2\Flower4.cs" />
+    <Compile Include="Assets\scripts\puzzle2\GreenFlower.cs" />
+    <Compile Include="Assets\scripts\puzzle2\GreenTrigger.cs" />
+    <Compile Include="Assets\scripts\puzzle2\LBFlower.cs" />
+    <Compile Include="Assets\scripts\puzzle2\LBTrigger.cs" />
+    <Compile Include="Assets\scripts\puzzle2\OrangeFlower.cs" />
+    <Compile Include="Assets\scripts\puzzle2\OrangeTrigger.cs" />
     <Compile Include="Assets\scripts\puzzle2\Palette.cs" />
     <Compile Include="Assets\scripts\puzzle2\PaletteTrigger.cs" />
+    <Compile Include="Assets\scripts\puzzle2\PinkFlower.cs" />
+    <Compile Include="Assets\scripts\puzzle2\PinkTrigger.cs" />
+    <Compile Include="Assets\scripts\puzzle2\PurpleFlower.cs" />
+    <Compile Include="Assets\scripts\puzzle2\PurpleTrigger.cs" />
     <Compile Include="Assets\scripts\puzzle2\Puzzle2.cs" />
-    <Compile Include="Assets\scripts\puzzle2\WhiteFlower.cs" />
-    <Compile Include="Assets\scripts\puzzle2\WhiteFlowerTrigger.cs" />
-    <Compile Include="Assets\scripts\RayCast.cs" />
-    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
-    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
-    <None Include="Assets\BrokenVector\FreeLowPolyPack\readme.txt" />
+    <None Include="Assets\models\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\models\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+    <None Include="Assets\models\BrokenVector\FreeLowPolyPack\readme.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/evelyn/Desktop/Unity/Final Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
